@@ -1,4 +1,4 @@
-# 🚀 Toast's Tools V1  
+# 🛠️ Toast's Tools V1  🛠️
 
 Welcome to **Toast's Tools**, a collection of tools designed to make life easier (or maybe a little more chaotic)!  
 
