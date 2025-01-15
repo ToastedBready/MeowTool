@@ -29,6 +29,6 @@ With just a tap, add this versatile multitool to your device and access all the 
 
 👉 [**Shortcut Version**](https://www.icloud.com/shortcuts/36fcfc16f1d14ff4a394dc1501ee2efb)
 
---
+---
 
 Feel free to share feedback or suggest additional features for future updates! This is just the beginning of **Toast's Tools**. 🌟  
