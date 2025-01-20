@@ -1,8 +1,17 @@
 import requests
 import time
 import random
-import sys
+import fade
 from colorama import Fore
+
+def Title():
+ print(fade.pinkred("""
+            ███╗   ███╗███████╗ ██████╗ ██╗    ██╗████████╗ ██████╗  ██████╗ ██╗     
+            ████╗ ████║██╔════╝██╔═══██╗██║    ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     
+            ██╔████╔██║█████╗  ██║   ██║██║ █╗ ██║   ██║   ██║   ██║██║   ██║██║     
+            ██║╚██╔╝██║██╔══╝  ██║   ██║██║███╗██║   ██║   ██║   ██║██║   ██║██║     
+            ██║ ╚═╝ ██║███████╗╚██████╔╝╚███╔███╔╝   ██║   ╚██████╔╝╚██████╔╝██████╗
+            ╚═╝     ╚═╝╚══════╝ ╚═════╝  ╚══╝╚══╝    ╚═╝    ╚═════╝  ╚═════╝ ╚═════╝"""))
 
 def Playfab_Spam():
  titleid = input(str("Enter PlayFab TitleId: "))
@@ -56,28 +65,32 @@ def Webhook_Info():
  print(f"Id: {id}")
  print(f"Guild Id: {guild_id}")
  print(f"Channel Id: {channel_id}")
+#------------------------------------#
 
-print(Fore.BLUE + "████████╗ ██████╗  █████╗ ███████╗████████╗███████╗    ████████╗ ██████╗  ██████╗ ██╗     ███████╗")
-print("╚══██╔══╝██╔═══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝")
-print("   ██║   ██║   ██║███████║███████╗   ██║   ███████╗       ██║   ██║   ██║██║   ██║██║     ███████╗")
-print("   ██║   ██║   ██║██╔══██║╚════██║   ██║   ╚════██║       ██║   ██║   ██║██║   ██║██║     ╚════██║")
-print("   ██║   ╚██████╔╝██║  ██║███████║   ██║   ███████║       ██║   ╚██████╔╝╚██████╔╝███████╗███████║")
-print("   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝")
-print("------------------------------------------------------------------" + Fore.RESET)
-print(Fore.LIGHTBLUE_EX + "")
-print("Webhook Spammer [1]       Webhook Deleter [2]")
-print("Playfab Spammer [3]       Webhook Info    [4]")
-print("")
-print("[Quit]")
-print("")
-Option = input("Option: ")
+Title()
+print(Fore.LIGHTMAGENTA_EX + """ 
+            Discord                         Playfab
+  ╔══════════════════════════╗     ╔══════════════════════════╗ 
+                
+   [1] Webhook Spammer              [5] PlayFab Spammer
+   [2] Webhook Deleter
+   [3] Webhook Info     
+   [4] Server Nuker (WIP)
+
+  ╚══════════════════════════╝     ╚══════════════════════════╝
+""")
+Option = input("> ")
 if Option == "1":
  Webhook_Spam()
 elif Option == "2":
  Webhook_Delete()
 elif Option == "3":
- Playfab_Spam()
-elif Option == "4":
  Webhook_Info()
+elif Option == "4":
+ print("WIP")
+elif Option == "5":
+ Playfab_Spam()
 elif Option == "quit":
- print("See ya!")
+ print("")
+else:
+ print("thats not a fucking option dumbass")
