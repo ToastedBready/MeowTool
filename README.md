@@ -1,6 +1,6 @@
-# 🛠️ MeowTool V2  🛠️
+# 🛠️ MeowTool V1  🛠️
 
-Welcome to **Toast's Tools**, a collection of tools designed to make life easier (or maybe a little more chaotic)!  
+Welcome to **MeowTool**, a collection of tools designed to make life easier (or maybe a little more chaotic)!  
 
 ---
 
@@ -20,7 +20,7 @@ Welcome to **Toast's Tools**, a collection of tools designed to make life easier
 
 ---
 
-## 📥 Download Toast's Tools Now!!
+## 📥 Download Meowtool Now!!
 
 👉 [**Get MeowTool now**](https://github.com/ToastedBready/Toasts-Tools/releases/tag/V1)
 With just a tap, add this versatile multitool to your device and access all the features in one place.  
