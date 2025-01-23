@@ -3,6 +3,7 @@ import requests
 import time
 import random
 import fade
+import base64
 from colorama import Fore
 os.system("clear")
 
@@ -117,7 +118,8 @@ def Generate_IP():
  clear()
  amount = int(input("How many IPs: "))
  for _ in range(amount):
-  print(f"{random.randint(0,256)}.{random.randint(0,256)}.{random.randint(0,256)}.{random.randint(0,256)}")
+  time.sleep(0.5)
+  print(f"{random.randint(123,256)}.{random.randint(123,256)}.{random.randint(123,256)}.{random.randint(123,256)}")
  
 def Catalog_Pull():
  clear()
@@ -160,18 +162,23 @@ def Change_Name():
 
  requests.patch(webhook4, json=body4)
  print("Changed Name Succesfully.")
+def IDToToken():
+ ID = input(str("Enter ID: "))
+ Token1 = str(base64.b64encode(ID.encode('utf-8')))
+
+ print(f"Token: {Token1[2:-1]}")
     
 #------------------------------------#
 
 print(Fore.LIGHTMAGENTA_EX + """ 
-            Webhooks                           IP                          Photon/PlayFab
+            Discord                            IP                          Photon/PlayFab
   ╔══════════════════════════╗     ╔══════════════════════════╗     ╔══════════════════════════╗
                 
-   [1] Webhook Spammer               [5] IP Geolocator                [7] PlayFab Spammer
-   [2] Webhook Deleter               [6] IP Generator                 [8] Photon CCU Spammer
-   [3] Webhook Info              	                              [9] Catalog Puller
-   [4] Webhook Name Changer
-
+   [1] Webhook Spammer               [6] IP Geolocator                [8] PlayFab Spammer
+   [2] Webhook Deleter               [7] IP Generator                 [9] Photon CCU Spammer
+   [3] Webhook Info              	                              [10] Catalog Puller
+   [4] Webhook Name Changer   								      
+   [5] ID To Token (WIP)
   ╚══════════════════════════╝     ╚══════════════════════════╝     ╚══════════════════════════╝
 
 [Quit]
@@ -180,22 +187,23 @@ Option = input("> ")
 if Option == "1":
  Webhook_Spam()
 elif Option == "2":
- Webhook_Delete()
+ Webhook_Spam()
 elif Option == "3":
- Webhook_Info()
+ Webhook_Delete()
 elif Option == "4":
- Change_Name()
+ Webhook_Info()
 elif Option == "5":
- IP_Geolocate()
+ IDToToken()
 elif Option == "6":
- Generate_IP()
+ IP_Geolocate()
 elif Option == "7":
- Playfab_Spam()
+ Generate_IP()
 elif Option == "8":
- Photon_Spam()
+ Playfab_Spam()
 elif Option == "9":
+ Photon_Spam()
+elif Option == "10"
  Catalog_Pull()
-
 elif Option.lower() == "quit":
  clear()
 elif Option.upper() == "QUIT":
